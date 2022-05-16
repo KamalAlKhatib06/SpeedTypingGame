@@ -1,0 +1,175 @@
+:root {
+    --main-color: #2196f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Jost, sans-serif;
+}
+
+.game {
+    background-color: rgba(255, 255, 255, .75);
+    min-height: 100vh;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+
+.name {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.message {
+    background-color: rgba(0, 0, 0, .75);
+    padding: 15px;
+    color: white;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.message span {
+    font-weight: bold;
+    color: crimson;
+}
+
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
+.start {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    background: #095da2;
+    /* margin-left: 350px; */
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.start:hover {
+    background: rgba(0, 0, 0, .25);
+    color: black;
+}
+
+.the-word {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    user-select: none;
+    font-size: 60px;
+    color: var(--main-color);
+}
+
+.input {
+    margin: 15px auto;
+    width: 100%;
+    display: block;
+    padding: 18px;
+    border: 3px solid var(--main-color);
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    caret-color: var(--main-color);
+}
+
+.input:focus {
+    border: 3px solid var(--main-color);
+    outline: none;
+}
+
+.upcoming-words {
+    background-color: rgba(0, 0, 0, .75);
+    margin: 15px 0;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upcoming-words div {
+    background-color: crimson;
+    margin: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    padding: 15px;
+}
+
+.control span {
+    font-weight: bold;
+    color: crimson;
+}
+
+select {
+    background: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+option {
+    color: black;
+}
+
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+.finish .good {
+    color: var(--main-color);
+}
+
+.finish .bad {
+    color: crimson;
+}
+
+.finish .end-btn {
+    background-color: crimson;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 4px;
+}
